@@ -3,7 +3,7 @@ const config = require('./config');
 
 // Use native ES6 promises
 Mongoose.Promise = global.Promise;
-Mongoose.connect(config.database.url, { useMongoClient: true });
+Mongoose.connect(config.database.url);
 
 const db = Mongoose.connection;
 
