@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const recordSchema = new mongoose.Schema({
   createdAt: Date,
   key: String,
-  count: Array,
+  counts: Array,
 });
 
 const RecordModel = mongoose.model('records', recordSchema);
